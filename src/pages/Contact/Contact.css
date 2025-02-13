@@ -71,6 +71,8 @@
 /* Opening Hours Styling */
 .opening-hours {
     text-align: center;
+    color:#800000 ;
+    background-color:rgb(244, 239, 239);
     margin-top: 30px; /* Adds space between email & opening hours */
     width: 100%;
 }
@@ -87,3 +89,52 @@
         gap: 30px;
     }
 }
+/* Reviews Section */
+.reviews-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.reviews-title {
+    font-size: 24px;
+    color: #800000;
+    margin-bottom: 15px;
+}
+
+/* Review Cards Layout */
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Review Card */
+.review-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-text {
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+}
+
+.review-rating {
+    font-size: 18px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+
+
+

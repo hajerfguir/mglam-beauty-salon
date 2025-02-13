@@ -13,6 +13,7 @@ import Login from './pages/Login/Login';
 import Team from './pages/Team/Team'; 
 import ClientInfo from './pages/ClientInfo/ClientInfo';
 
+
 /* Scrolls to section when navigating */
 const ScrollToSection = () => {
     const location = useLocation();

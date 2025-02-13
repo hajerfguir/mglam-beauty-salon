@@ -2,12 +2,19 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
+    // Static Reviews Data
+    const reviews = [
+        { id: 1, name: "Sarah L.", rating: 4.8, text: "Amazing service! My hair has never looked better." },
+        { id: 2, name: "Emma R.", rating: 4.5, text: "Loved the spa treatment, very relaxing and professional." },
+        { id: 3, name: "Sophia K.", rating: 5, text: "Great nail art! Staff was super friendly and talented." }
+    ];
+
     return (
         <div className="contact-container">
             {/* Title */}
             <h1 className="contact-title">Contact Us</h1>
 
-            {/* Contact Sections */}
+            {/* Contact Sections (Your Original Layout) */}
             <div className="contact-grid">
                 {/* Address Section */}
                 <div className="contact-item">
@@ -37,6 +44,21 @@ const Contact = () => {
                 <p><strong>Weekdays:</strong> 08:30 - 17:30</p>
                 <p><strong>Weekends and Holidays:</strong> 09:00 - 12:00</p>
             </div>
+
+            {/* Reviews Section - Added Below Your Content */}
+            <div className="reviews-section">
+                <h2 className="reviews-title">What Our Clients Say:</h2>
+                <div className="reviews-container">
+                    {reviews.map((review) => (
+                        <div key={review.id} className="review-card">
+                            <h3>{review.name}</h3>
+                            <p className="review-text">"{review.text}"</p>
+                            <p className="review-rating">⭐ {review.rating} / 5</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
         </div>
     );
 };

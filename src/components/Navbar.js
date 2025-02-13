@@ -31,14 +31,20 @@ const Navbar = () => {
 
             {/* Centered Navigation Links with Glam Icon in the middle */}
             <ul className="nav-links">
-                <li className={location.pathname === "/" ? "active" : ""}>
-                    <a onClick={() => handleNavigation("home", "/")}>Home</a>
+                <li className={location.pathname === "/home" ? "active" : ""}>
+                    <button onClick={() => handleNavigation("home", "/")}>
+                        Home
+                    </button>
                 </li>
-                <li>
-                    <a onClick={() => handleNavigation("services", "/")}>Services</a>
+                <li className={location.pathname === "/services" ? "active" : ""}>
+                    <button onClick={() => handleNavigation("services", "/")}>
+                        Services
+                    </button>
                 </li>
                 <li className={location.pathname === "/team" ? "active" : ""}>
-                    <a onClick={() => handleNavigation("team", "/")}>Our Team</a>
+                    <button onClick={() => handleNavigation("team", "/")}>
+                        Our Team
+                    </button>
                 </li>
 
                 {/* Glam Icon in the center */}
@@ -47,13 +53,19 @@ const Navbar = () => {
                 </li>
 
                 <li className={location.pathname === "/location" ? "active" : ""}>
-                    <a onClick={() => handleNavigation("location", "/location")}>Location</a>
+                    <button onClick={() => handleNavigation("location", "/location")}>
+                        Location
+                    </button>
                 </li>
                 <li className={location.pathname === "/contact" ? "active" : ""}>
-                    <a onClick={() => handleNavigation("contact", "/contact")}>Contact Us</a>
+                    <button onClick={() => handleNavigation("contact", "/contact")}>
+                        Contact Us
+                    </button>
                 </li>
                 <li className={location.pathname === "/booking" ? "active" : ""}>
-                    <a onClick={() => handleNavigation("booking", "/booking")}>Book Now</a>
+                    <button onClick={() => handleNavigation("booking", "/booking")}>
+                        Book Now
+                    </button>
                 </li>
             </ul>
 

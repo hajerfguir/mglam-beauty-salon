@@ -14,21 +14,37 @@
 .hero-section {
     position: relative;
     width: 100%;
-    height: 500px; /* Adjust height based on design */
+    min-height: 600px; /* Increase height to ensure spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px; /* Push down the content */
 }
 
 /* Salon Name Styling */
 .salon-name {
-    position: absolute;
-    top: 180px; 
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative; /* Change from absolute to relative */
+    top: 0; /* Remove absolute positioning */
+    left: auto;
+    transform: none;
+    text-align: center;
     font-family: 'Imperial Script', cursive;
-    font-size: 70px; /* Large and elegant */
+    font-size: 55px; /* Large and elegant */
     color: #800000; /* Dark Red */
-    z-index: 10; /* Ensures text is above the image */
     font-weight: normal; /* Removed bold */
+    margin-bottom: 20px; /* Add spacing before the image */
+    letter-spacing: 3px;
 }
+
+/* Hero Image */
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Ensure it doesn't overflow */
+    object-fit: cover; /* Ensures the image fills the space */
+}
+
 
 .hero-image {
     width: 100%;

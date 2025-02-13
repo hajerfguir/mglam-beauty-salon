@@ -19,6 +19,7 @@
 /* Team Grid Layout */
 .team-grid {
     display: flex;
+    flex-wrap: nowrap; /* Ensures all items are in one row */
     justify-content: center;
     gap: 50px;
     text-align: center;
@@ -62,7 +63,7 @@
     margin-bottom: 10px;
 }
 
-/* Social Icons (Images) */
+/* Social Icons */
 .social-icons {
     margin-top: 10px;
     display: flex;
@@ -71,11 +72,30 @@
 }
 
 .social-icon {
-    width: 24px; /* Adjust size */
+    width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
     transform: scale(1.1);
+}
+
+/* Star Ratings */
+.star-rating {
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 18px;
+    color: #800000; /* Star color */
+}
+
+.full-star {
+    color: #800000; /* Full star */
+}
+
+.half-star {
+    color: #800000; /* Half star */
+    opacity: 0.6; /* Make half-star slightly faded */
 }
