@@ -7,11 +7,13 @@ const Navbar = () => {
     const navigate = useNavigate();
     const isLoggedIn = localStorage.getItem("loggedIn");
 
-    // Function to smooth scroll to a section
-    const scrollToSection = (sectionId) => {
+    // Function to handle both scrolling & navigation
+    const handleNavigation = (sectionId, route) => {
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            navigate(route);
         }
     };
 
@@ -29,18 +31,30 @@ const Navbar = () => {
 
             {/* Centered Navigation Links with Glam Icon in the middle */}
             <ul className="nav-links">
-                <li className={location.pathname === "/" ? "active" : ""}><a href="#home">Home</a></li>
-                <li><a href="#services" onClick={() => scrollToSection('services')}>Services</a></li>
-                <li className={location.pathname === "/team" ? "active" : ""}><Link to="/team">Our Team</Link></li>
+                <li className={location.pathname === "/" ? "active" : ""}>
+                    <a onClick={() => handleNavigation("home", "/")}>Home</a>
+                </li>
+                <li>
+                    <a onClick={() => handleNavigation("services", "/")}>Services</a>
+                </li>
+                <li className={location.pathname === "/team" ? "active" : ""}>
+                    <a onClick={() => handleNavigation("team", "/")}>Our Team</a>
+                </li>
 
                 {/* Glam Icon in the center */}
                 <li className="nav-icon">
                     <img src="/images/glam-icon.png" alt="Glam Icon" className="glam-icon" />
                 </li>
 
-                <li className={location.pathname === "/location" ? "active" : ""}><Link to="/location">Location</Link></li>
-                <li className={location.pathname === "/contact" ? "active" : ""}><Link to="/contact">Contact Us</Link></li>
-                <li className={location.pathname === "/booking" ? "active" : ""}><Link to="/booking">Book Now</Link></li>
+                <li className={location.pathname === "/location" ? "active" : ""}>
+                    <a onClick={() => handleNavigation("location", "/location")}>Location</a>
+                </li>
+                <li className={location.pathname === "/contact" ? "active" : ""}>
+                    <a onClick={() => handleNavigation("contact", "/contact")}>Contact Us</a>
+                </li>
+                <li className={location.pathname === "/booking" ? "active" : ""}>
+                    <a onClick={() => handleNavigation("booking", "/booking")}>Book Now</a>
+                </li>
             </ul>
 
             {/* User Profile (Name + Icon) */}

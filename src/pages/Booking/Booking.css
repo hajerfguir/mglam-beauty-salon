@@ -5,13 +5,13 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #DFBFA8; 
+    background-color: #ffffff; 
     padding: 20px;
 }
 
 .booking-box {
     display: flex;
-    background: white;
+    background:#DFBFA8;
     padding: 30px;
     border-radius: 10px;
     max-width: 900px;

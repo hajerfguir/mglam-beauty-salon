@@ -1,33 +1,48 @@
 import React from "react";
-import "./Footer.css"; // ✅ Assure-toi que le CSS est bien importé
+import "./Footer.css";
 
 const Footer = () => {
-  return (
-    <footer className="footer">
-      {/* Logo centré */}
-      <div className="footer-logo">
-        <img src="/images/logo-transparent.png" alt="M.Glam Beauty Salon Logo" />
-      </div>
+    return (
+        <footer className="footer">
+            <div className="footer-content">
+                {/* Logo */}
+                <img src="/images/logo-transparent.png" alt="M.Glam Logo" className="footer-logo" />
 
-      {/* Nom & Description */}
-      <h2 className="footer-title">M.Glam Beauty Salon</h2>
-      <p className="footer-description">
-        Découvrez l'excellence et le bien-être chez M.Glam Beauty Salon. Nos experts en soins de beauté vous offrent des services de qualité pour sublimer votre apparence et renforcer votre confiance en vous.
-      </p>
+                {/* Title */}
+                <h2 className="footer-title">M.Glam Beauty Salon</h2>
 
-      {/* Icônes des réseaux sociaux */}
-      <div className="footer-icons">
-        <img src="/images/fb.png" alt="Facebook" />
-        <img src="/images/insta.png" alt="Instagram" />
-        <img src="/images/x.png" alt="Twitter" />
-      </div>
+                {/* Description */}
+                <p className="footer-description">
+                    Discover excellence and well-being at M.Glam Beauty Salon. Our beauty
+                    experts offer quality services to enhance your appearance and boost your confidence.
+                </p>
 
-      {/* Mentions légales (footer.png) */}
-      <div className="footer-terms">
-        <img src="/images/footer.png" alt="Mentions légales" />
-      </div>
-    </footer>
-  );
+                {/* Social Icons */}
+                <div className="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/fb.png" alt="Facebook" className="social-icon" />
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/x.png" alt="Twitter" className="social-icon" />
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/insta.png" alt="Instagram" className="social-icon" />
+                    </a>
+                </div>
+            </div>
+
+            {/* Footer Bottom Section */}
+            <div className="footer-bottom">
+                <div className="footer-left">
+                    <p>© 2025 M.Glam. All Rights Reserved.</p>
+                    <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms of Use</a>
+                </div>
+                <div className="footer-right">
+                    <img src="/images/footer.png" alt="Payment Methods" className="footer-payment" />
+                </div>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;

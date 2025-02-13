@@ -44,14 +44,14 @@ const Team = () => {
 
                         {/* Social Icons using Images */}
                         <div className="social-icons">
-                            <a href={stylist.instagram} target="_blank" rel="noopener noreferrer">
-                                <img src="/images/insta.png" alt="Instagram" className="social-icon" />
-                            </a>
                             <a href={stylist.facebook} target="_blank" rel="noopener noreferrer">
                                 <img src="/images/fb.png" alt="Facebook" className="social-icon" />
                             </a>
                             <a href={stylist.twitter} target="_blank" rel="noopener noreferrer">
                                 <img src="/images/x.png" alt="Twitter" className="social-icon" />
+                            </a>
+                            <a href={stylist.instagram} target="_blank" rel="noopener noreferrer">
+                                <img src="/images/insta.png" alt="Instagram" className="social-icon" />
                             </a>
                         </div>
                     </div>

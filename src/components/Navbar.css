@@ -1,3 +1,33 @@
+/* Make the Navbar Fixed at the Top */
+.navbar {
+    position: fixed;
+    top: 40px; /* Adjusted to account for the discount banner */
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Fix the Discount Banner Above the Navbar */
+.discount-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #800000; /* Dark Red */
+    color: white;
+    text-align: center;
+    padding: 10px 8px;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1100; /* Higher than navbar */
+}
+
+/* Add Padding to Avoid Overlapping Content */
+body {
+    padding-top: 110px; /* Adjust based on navbar + discount banner height */
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -6,6 +36,7 @@
     padding: 10px 30px;
     height: 70px;
 }
+
 
 /* Logo Container */
 .logo-container {
@@ -41,11 +72,6 @@
     font-size: 16px;
     font-weight: normal;
     transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
-}
-
-/* Active Link */
-.nav-links .active a {
-    font-weight: bold;
 }
 
 /* Hover Effect: Make Only the Hovered One Bigger */
