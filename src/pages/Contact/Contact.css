@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+/* Main Container */
+.contact-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Title Styling */
+.contact-title {
+    font-family: 'Imperial Script', cursive;
+    font-size: 55px;
+    color: #800000;
+    font-weight: normal;
+    margin-bottom: 20px;
+    position: relative;
+    top: -20px;
+}
+
+/* Contact Grid Layout */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Adds space between items */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contact Sections */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px; /* Keeps size consistent */
+}
+
+/* Icons */
+.contact-icon {
+    width: 50px;
+    opacity: 0.2; /* Light background styling */
+}
+
+/* Headings */
+.contact-item h3 {
+    font-size: 18px;
+    color: #800000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Email Link */
+.email-link {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.email-link:hover {
+    color: #800000;
+}
+
+/* Text Styling */
+.contact-item p {
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+}
+
+/* Opening Hours Styling */
+.opening-hours {
+    text-align: center;
+    margin-top: 30px; /* Adds space between email & opening hours */
+    width: 100%;
+}
+
+/* Ensuring Opening Hours is Centered */
+.contact-item.opening-hours {
+    width: 220px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-grid {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

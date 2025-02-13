@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+/* Top Banner */
+.top-banner {
+    background-color: #800000; /* Dark Red */
+    color: white;
+    text-align: center;
+    padding: 10px 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height based on design */
+}
+
+/* Salon Name Styling */
+.salon-name {
+    position: absolute;
+    top: 180px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Imperial Script', cursive;
+    font-size: 70px; /* Large and elegant */
+    color: #800000; /* Dark Red */
+    z-index: 10; /* Ensures text is above the image */
+    font-weight: normal; /* Removed bold */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logo {
+    width: 120px; /* Adjust size of logo */
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: "Playfair Display", serif; /* Ensure correct font */
+    font-size: 48px;
+    color: #800000;
+    font-weight: bold;
+}

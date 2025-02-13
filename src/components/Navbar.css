@@ -1,0 +1,131 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 30px;
+    height: 70px;
+}
+
+/* Logo Container */
+.logo-container {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image */
+.navbar-logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+/* Style the Links: Black, No Underline */
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+/* Active Link */
+.nav-links .active a {
+    font-weight: bold;
+}
+
+/* Hover Effect: Make Only the Hovered One Bigger */
+.nav-links li:hover a {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+/* Glam Icon in the Middle */
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.glam-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* User Profile Section */
+.user-profile {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Login Section */
+.login-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Style the Login Text */
+.login-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style the Login Icon */
+.login-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* User Info (Name + Icon) */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+/* User Icon */
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #800000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.logout-btn:hover {
+    background: #a52a2a;
+}

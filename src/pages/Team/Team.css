@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:wght@400&display=swap');
+
+/* Main Container */
+.team-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Title Styling */
+.team-title {
+    font-family: 'Imperial Script', cursive;
+    font-size: 55px;
+    color: #800000;
+    font-weight: normal;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+/* Team Grid Layout */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Team Member Card */
+.team-member {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+/* Images */
+.team-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Names */
+.team-member h3 {
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+}
+
+/* Role Styling */
+.stylist-role {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* Social Icons (Images) */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 24px; /* Adjust size */
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}

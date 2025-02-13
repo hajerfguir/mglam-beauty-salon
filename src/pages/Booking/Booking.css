@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Inter:wght@400&display=swap');
+
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #DFBFA8; 
+    padding: 20px;
+}
+
+.booking-box {
+    display: flex;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.booking-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.booking-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.salon-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #800000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.booking-title {
+    font-size: 28px;
+    font-family: 'Abhaya Libre', serif;
+    color: #000;
+    margin: 10px 0;
+}
+
+.booking-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input, select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="date"], input[type="time"] {
+    position: relative;
+}
+
+.booking-button {
+    width: 100%;
+    background-color: #800000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.booking-button:hover {
+    background-color: #a52a2a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .booking-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-image {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}

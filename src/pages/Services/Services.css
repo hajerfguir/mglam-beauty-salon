@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&family=Inter:wght@400&display=swap');
+
+/* Services Section */
+.services-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Services Title */
+.services-title {
+    font-family: 'Imperial Script', cursive;
+    font-size: 55px;
+    color: #800000;
+    font-weight: normal;
+    margin-bottom: 20px;
+    position: relative;
+    top: -20px; 
+    letter-spacing: 3px;
+}
+
+/* Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+}
+
+/* Category Headings */
+.services-category {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 26px;
+    color: #800000;
+    text-decoration: none; /* Remove underline */
+    font-weight: normal;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Service Item List */
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+/* Price Styling */
+.service-price {
+    font-family: 'Inter', sans-serif;
+    color: #800000;
+    font-size: 16px;
+    text-align: right;
+    min-width: 80px; /* Ensure all prices align */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-title {
+        font-size: 40px;
+    }
+}

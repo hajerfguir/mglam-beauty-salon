@@ -1,13 +1,31 @@
-body {
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Inter:wght@300;400;700&display=swap');
+
+/* General Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Apply a Default Font */
+body {
+  font-family: 'Inter', sans-serif; /* Change default font */
+  background-color: #f8f8f8; /* Light background */
+  color: #333; /* Dark text */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth; /* Smooth scrolling */
 }
+
+/* Code Block Styling */
+code {
+  font-family: 'Courier New', monospace;
+}
+
+/* Add a Scroll Snap (if you want smooth scrolling between sections) */
+html {
+  scroll-behavior: smooth;
+}
+
+

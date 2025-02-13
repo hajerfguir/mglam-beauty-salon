@@ -1,0 +1,47 @@
+.footer {
+    text-align: center;
+    background-color: #dfbfa8;
+    padding: 30px 0;
+}
+
+/* Logo */
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Titre M.Glam Beauty Salon */
+.footer-title {
+    font-family: 'Imperial Script', cursive;
+    font-size: 32px;
+    color: #800000;
+    margin-bottom: 5px;
+    font-weight: normal; 
+}
+
+/* Description */
+.footer-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Icônes */
+.footer-icons img {
+    width: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer-icons img:hover {
+    opacity: 0.7;
+}
+
+/* Mentions légales */
+.footer-terms img {
+    width: 300px;
+    margin-top: 20px;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap');
+
+/* Main Container */
+.client-info-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Title Styling */
+.client-title {
+    font-family: 'Imperial Script', cursive;
+    font-size: 55px;
+    color: #800000;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Profile Box Layout */
+.client-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #800000;
+}
+
+/* Edit Button */
+.edit-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #a52a2a;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Client Details */
+.client-details {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Abhaya Libre', serif;
+}
+
+/* Plain Email Styling (No Blue Link) */
+.plain-email {
+    color: black;
+    text-decoration: none;
+}
+
+/* Previous Appointments Table */
+.appointments-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.appointments-table th,
+.appointments-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.appointments-table th {
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+.appointments-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Date Filter Box */
+.date-filter {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #800000;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
