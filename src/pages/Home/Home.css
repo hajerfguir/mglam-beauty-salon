@@ -1,56 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 
-/* Top Banner */
-.top-banner {
-    background-color: #800000; /* Dark Red */
-    color: white;
-    text-align: center;
-    padding: 10px 8px;
-    font-weight: bold;
-    font-size: 14px;
+/* Ensure content starts below the navbar and banner */
+.home-container {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
 }
 
 /* Hero Section */
 .hero-section {
     position: relative;
     width: 100%;
-    min-height: 600px; /* Increase height to ensure spacing */
+    min-height: 600px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 40px; /* Push down the content */
+    padding-top: 40px; 
+    margin-top: 10px;
 }
 
 /* Salon Name Styling */
 .salon-name {
-    position: relative; /* Change from absolute to relative */
-    top: 0; /* Remove absolute positioning */
+    position: relative; 
+    top: 0; 
     left: auto;
     transform: none;
     text-align: center;
     font-family: 'Imperial Script', cursive;
-    font-size: 55px; /* Large and elegant */
-    color: #800000; /* Dark Red */
-    font-weight: normal; /* Removed bold */
-    margin-top: 40px; /* Add spacing before the image */
+    font-size: 55px;
+    color: #800000; 
+    font-weight: normal;
+    margin-top: 40px; 
     letter-spacing: 3px;
 }
 
-/* Hero Image */
+
 .hero-image {
 
     width: 100%;
     height: auto;
-    max-height: 500px; /* Ensure it doesn't overflow */
-    object-fit: cover; /* Ensures the image fills the space */
-}
-
-
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image fills the space */
+    max-height: 500px; 
+    object-fit: cover; 
 }
 
 .hero-overlay {

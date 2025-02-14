@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react"; 
 import "./Booking.css";
 
 const Booking = () => {
-    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -13,6 +11,8 @@ const Booking = () => {
         time: "",
         service: "",
     });
+
+    const [showConfirmation, setShowConfirmation] = useState(false); // Initially false
 
     // Handle input changes
     const handleChange = (e) => {
@@ -26,8 +26,16 @@ const Booking = () => {
         // Save form data in localStorage
         localStorage.setItem("bookingData", JSON.stringify(formData));
 
-        // Navigate to confirmation page
-        navigate("/confirmation");
+        // Show the confirmation section
+        setShowConfirmation(true);
+
+        // Scroll to confirmation section
+        setTimeout(() => {
+            const confirmationSection = document.getElementById("confirmation-section");
+            if (confirmationSection) {
+                confirmationSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }, 100);
     };
 
     return (
@@ -71,6 +79,25 @@ const Booking = () => {
                     </form>
                 </div>
             </div>
+
+            {/* Confirmation Section - Only appears after form submission */}
+            {showConfirmation && (
+                <div id="confirmation-section" className="confirmation-container">
+                    <div className="confirmation-box">
+                        <div className="confirmation-icon">✔</div>
+                        <div className="confirmation-text">
+                            <h3 className="confirmed-name">{formData.firstName} {formData.lastName}</h3>
+                            <p>
+                                Thank you for choosing M.Glam Beauty Center! Your reservation for {formData.service} has been successfully confirmed for {formData.date} at {formData.time}.  
+                                We look forward to providing you with an exceptional beauty experience!  
+                            </p>
+                            <button className="return-button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+                                Return to Top
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

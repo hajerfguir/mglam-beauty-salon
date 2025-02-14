@@ -14,8 +14,9 @@
     background:#DFBFA8;
     padding: 30px;
     border-radius: 10px;
-    max-width: 900px;
+    max-width: 800px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; 
 }
 
 .booking-image {

@@ -78,17 +78,12 @@ body {
     transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-/* Active Page Styling (Bold, No Background) */
-.nav-links li.active button {
-    font-weight: bold;
-    color: #800000 !important; /* Dark Red */
-}
 
-/* Hover Effect: Only Text Color Change, No Background */
+
 .nav-links li:hover button {
     font-weight: bold;
-    color: #a52a2a !important; /* Slightly lighter red */
-    background: none !important; /* Ensure no background on hover */
+    color: #a52a2a !important; 
+    background: none !important; 
 }
 
 /* Glam Icon in the Middle */

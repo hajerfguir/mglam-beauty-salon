@@ -10,13 +10,16 @@
 
 /* Services Title */
 .services-title {
+    position: relative; 
+    top: 0; 
+    left: auto;
+    transform: none;
+    text-align: center;
     font-family: 'Imperial Script', cursive;
     font-size: 55px;
-    color: #800000;
+    color: #800000; 
     font-weight: normal;
-    margin-bottom: 20px;
-    position: relative;
-    top: -20px; 
+    margin-top: 80px; 
     letter-spacing: 3px;
 }
 
@@ -26,6 +29,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     text-align: left;
+    margin-top: 60px; 
 }
 
 /* Category Headings */

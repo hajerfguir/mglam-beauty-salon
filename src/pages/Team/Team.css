@@ -8,11 +8,16 @@
 
 /* Title Styling */
 .team-title {
+    position: relative; 
+    top: 0; 
+    left: auto;
+    transform: none;
+    text-align: center;
     font-family: 'Imperial Script', cursive;
     font-size: 55px;
-    color: #800000;
+    color: #800000; 
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-top: 90px; 
     letter-spacing: 3px;
 }
 
@@ -23,7 +28,7 @@
     justify-content: center;
     gap: 50px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 90px; 
 }
 
 /* Team Member Card */

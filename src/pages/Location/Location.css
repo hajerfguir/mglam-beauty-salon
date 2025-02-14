@@ -8,13 +8,16 @@
 
 /* Title Styling */
 .location-title {
+    position: relative; 
+    top: 0; 
+    left: auto;
+    transform: none;
+    text-align: center;
     font-family: 'Imperial Script', cursive;
     font-size: 55px;
-    color: #800000;
+    color: #800000; 
     font-weight: normal;
-    margin-bottom: 20px;
-    position: relative;
-    top: -20px; 
+    margin-top: 90px; 
     letter-spacing: 3px;
 }
 
@@ -25,6 +28,7 @@
     align-items: center;
     margin: 0 auto;
     width: 80%;
+    margin-top: 80px; 
 }
 
 /* Map Styling */

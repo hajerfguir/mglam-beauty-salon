@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import DiscountBanner from './components/DiscountBanner';
 import Footer from './components/Footer';
@@ -53,6 +53,8 @@ function App() {
                 
                 {/* Other Routes (Separate Pages) */}
                 <Routes>
+                    <Route path="/" element={<Navigate to="/home" replace />} />
+                    <Route path="/services" element={<Services />} />
                     <Route path="/booking" element={<Booking />} />
                     <Route path="/confirmation" element={<Confirmation />} />
                     <Route path="/login" element={<Login />} />
