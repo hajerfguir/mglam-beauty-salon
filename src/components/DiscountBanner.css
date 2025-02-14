@@ -2,7 +2,8 @@
     background-color: #800000; /* Dark red */
     color: white;
     text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
+    /*padding: 10px 0;*/
+    font-size: 12px;
     font-weight: bold;
+    height: 35px;
 }

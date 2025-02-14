@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="user-profile">
                 {isLoggedIn ? (
                     <div className="user-info">
-                        <Link to="/client-info" className="user-name">Hajer</Link> {/* Redirects to profile page */}
+                        <Link to="/client-info" className="user-name">Hajer</Link>
                         <img src="/images/login-icon.png" alt="User Icon" className="user-icon" />
                         <button className="logout-btn" onClick={handleLogout}>Logout</button>
                     </div>

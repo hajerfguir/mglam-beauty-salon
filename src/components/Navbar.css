@@ -26,7 +26,7 @@ body {
 /* Fixed Navbar */
 .navbar {
     position: fixed;
-    top: 40px; /* Adjusted to account for the discount banner */
+    top: 35px; /* Adjusted to account for the discount banner */
     left: 0;
     width: 100%;
     background: white;

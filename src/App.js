@@ -12,6 +12,7 @@ import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/Login';
 import Team from './pages/Team/Team'; 
 import ClientInfo from './pages/ClientInfo/ClientInfo';
+import './App.css';
 
 
 /* Scrolls to section when navigating */
@@ -49,7 +50,7 @@ function App() {
                 <div id="location"><Location /></div>
                 <div id="contact"><Contact /></div>
                 <div id="booking"><Booking /></div>
-
+                
                 {/* Other Routes (Separate Pages) */}
                 <Routes>
                     <Route path="/booking" element={<Booking />} />

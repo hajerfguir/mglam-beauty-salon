@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 80px; /* Push down the content */
+    padding-top: 40px; /* Push down the content */
 }
 
 /* Salon Name Styling */
@@ -33,12 +33,13 @@
     font-size: 55px; /* Large and elegant */
     color: #800000; /* Dark Red */
     font-weight: normal; /* Removed bold */
-    margin-bottom: 20px; /* Add spacing before the image */
+    margin-top: 40px; /* Add spacing before the image */
     letter-spacing: 3px;
 }
 
 /* Hero Image */
 .hero-image {
+
     width: 100%;
     height: auto;
     max-height: 500px; /* Ensure it doesn't overflow */
