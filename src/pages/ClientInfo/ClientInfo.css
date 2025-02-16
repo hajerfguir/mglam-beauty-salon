@@ -8,11 +8,17 @@
 
 /* Title Styling */
 .client-title {
+    position: relative; 
+    top: 0; 
+    left: auto;
+    transform: none;
+    text-align: center;
     font-family: 'Imperial Script', cursive;
     font-size: 55px;
-    color: #800000;
+    color: #800000; 
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-top: 80px; 
+    letter-spacing: 3px;
 }
 
 /* Profile Box Layout */

@@ -4,7 +4,7 @@
 /* Global Styles */
 body {
     font-family: 'Inter', sans-serif;
-    padding-top: 110px; /* Adjust based on navbar + discount banner height */
+    padding-top: 110px; /* Adjust for navbar & discount banner */
     margin: 0;
 }
 
@@ -14,82 +14,92 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #800000; /* Dark Red */
+    background-color: #800000; 
     color: white;
     text-align: center;
     padding: 10px 8px;
     font-weight: bold;
     font-size: 14px;
-    z-index: 1100; /* Higher than navbar */
+    z-index: 1100; 
 }
 
-/* Fixed Navbar */
+/* Navbar */
 .navbar {
     position: fixed;
-    top: 35px; /* Adjusted to account for the discount banner */
+    top: 35px; 
     left: 0;
     width: 100%;
     background: white;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1000; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
     height: 70px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo Container */
-.logo-container {
-    flex: 1; 
+/* Navbar Brand (Logo - Aligned to Top Left) */
+.navbar-brand {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
 }
 
-/* Logo Image */
 .navbar-logo {
     width: 60px;
     height: auto;
 }
 
-/* Navigation Links */
+/* Navbar Navigation - Ensures Single Line */
 .nav-links {
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
     text-align: center;
-    padding: 0;
+    white-space: nowrap; 
 }
 
-.nav-links li {
-    list-style: none;
+/* Bootstrap Override - Ensure Links Stay Centered in One Line */
+.navbar-nav {
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center !important;
+    align-items: center;
+    gap: 20px;
 }
 
-/* Remove Button Background & Borders */
-.nav-links button {
-    all: unset; /* Resets default button styles */
-    cursor: pointer; /* Ensures cursor changes */
-    font-size: 16px;
-    color: black;
-    font-weight: normal;
-    padding: 5px 10px;
-    transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+/* Navigation Links Styling */
+.navbar-nav .nav-link {
+    font-size: 16px !important;
+    font-weight: normal !important;
+    padding: 10px 15px !important;
+    color: black !important;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    white-space: nowrap; /* Prevents line breaks */
 }
 
-
-
-.nav-links li:hover button {
-    font-weight: bold;
-    color: #a52a2a !important; 
-    background: none !important; 
+/* Active & Hover Effects */
+.navbar-nav .nav-link:hover {
+    font-weight: bold !important;
+    color: #a52a2a !important;
+    transform: scale(1.05);
 }
 
 /* Glam Icon in the Middle */
 .nav-icon {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .glam-icon {
@@ -97,34 +107,30 @@ body {
     height: 30px;
 }
 
-/* User Profile Section */
+/* User Profile Section (Aligned to Top Right) */
 .user-profile {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
 }
 
+/* Login Section */
 .login-section {
     display: flex;
     align-items: center;
-    gap: 6px; /* Adjust space between text and icon */
+    gap: 6px;
 }
 
+/* Login Text */
 .login-text {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
     color: black;
     font-size: 16px;
-}
-
-
-
-.login-link {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 /* Style the Login Icon */
@@ -155,16 +161,25 @@ body {
 
 /* Logout Button */
 .logout-btn {
-    background: #800000;
-    color: white;
-    border: none;
-    padding: 5px 10px;
+    background: #800000 !important;
+    color: white !important;
+    border: none !important;
+    padding: 5px 10px !important;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-left: 10px;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    margin-left: 10px !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
+/* Logout Button Hover */
 .logout-btn:hover {
-    background: #a52a2a;
+    background: #a52a2a !important;
+    transform: scale(1.1);
+}
+
+/* Logout Button Click Effect */
+.logout-btn:active {
+    transform: scale(1.2);
+    background: black !important;
 }

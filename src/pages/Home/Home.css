@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 
-/* Ensure content starts below the navbar and banner */
 .home-container {
-    padding-top: 80px; /* Adjust this value based on your navbar height */
+    padding-top: 80px; 
 }
 
 /* Hero Section */
@@ -51,12 +50,12 @@
 }
 
 .logo {
-    width: 120px; /* Adjust size of logo */
+    width: 120px; 
     margin-bottom: 10px;
 }
 
 .title {
-    font-family: "Playfair Display", serif; /* Ensure correct font */
+    font-family: "Playfair Display", serif; 
     font-size: 48px;
     color: #800000;
     font-weight: bold;

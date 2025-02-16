@@ -33,6 +33,16 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
             />
             <button onClick={handleLogin}>Login</button>
+
+            {/* Forgot Password & Create Account Links */}
+            <div className="login-links">
+                <p onClick={() => navigate("/forgot-password")} className="forgot-password">
+                    Forgot Password?
+                </p>
+                <p onClick={() => navigate("/signup")} className="create-account">
+                    Create a New Account
+                </p>
+            </div>
         </div>
     );
 };

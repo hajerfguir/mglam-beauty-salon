@@ -7,13 +7,11 @@ const Confirmation = () => {
     const [bookingData, setBookingData] = useState(null);
 
     useEffect(() => {
-        // Get booking details from localStorage
         const storedData = localStorage.getItem("bookingData");
 
         if (storedData) {
             setBookingData(JSON.parse(storedData));
         } else {
-            // Redirect back to booking page if no data found
             navigate("/booking");
         }
     }, [navigate]);
