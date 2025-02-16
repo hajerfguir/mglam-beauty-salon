@@ -35,8 +35,7 @@ function App() {
     return (
         <Router>
             <ScrollToSection />
-
-            {/* Fixed Navbar & Discount Banner */}
+            
             <div className="fixed-header">
                 <DiscountBanner />
                 <Navbar />

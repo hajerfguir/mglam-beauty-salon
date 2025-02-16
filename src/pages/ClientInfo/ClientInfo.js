@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./ClientInfo.css";
 
 const ClientInfo = () => {
-  const navigate = useNavigate(); // Hook for navigation
   const [profileImage, setProfileImage] = useState("/images/member3.png");
 
   const handleImageUpload = (event) => {
@@ -68,11 +66,6 @@ const ClientInfo = () => {
               </tr>
             </tbody>
           </table>
-
-          {/* Send Message Button */}
-          <button className="send-message-btn" onClick={() => navigate("/confirmation")}>
-            Send Message
-          </button>
         </div>
       </div>
     </div>

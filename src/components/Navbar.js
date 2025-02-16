@@ -69,20 +69,23 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            {/* User Profile (Name + Icon) */}
+      
             <div className="user-profile">
                 {isLoggedIn ? (
                     <div className="user-info">
-                        <Link to="/client-info" className="user-name">Hajer</Link>
+                        <Link to="/client-info" className="user-name" onClick={() => navigate('/client-info')}>
+                            Hajer
+                        </Link>
                         <img src="/images/login-icon.png" alt="User Icon" className="user-icon" />
                         <button className="logout-btn" onClick={handleLogout}>Logout</button>
                     </div>
                 ) : (
-                    <div className="login-container">
-                        <Link to="/login" className="login-link">Login</Link>
+                    <div className="login-section">
+                        <Link to="/login" className="login-text">Login</Link>
                         <img src="/images/login-icon.png" alt="Login Icon" className="login-icon" />
                     </div>
                 )}
+              
             </div>
         </nav>
     );
