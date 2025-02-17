@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.eb81ae6a.css",
-    "main.js": "/react-gh-pages/static/js/main.526189f9.js",
-    "static/js/488.efb06563.chunk.js": "/react-gh-pages/static/js/488.efb06563.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.eb81ae6a.css.map": "/react-gh-pages/static/css/main.eb81ae6a.css.map",
-    "main.526189f9.js.map": "/react-gh-pages/static/js/main.526189f9.js.map",
-    "488.efb06563.chunk.js.map": "/react-gh-pages/static/js/488.efb06563.chunk.js.map"
+    "main.css": "/mglam-beauty-salon/static/css/main.eb81ae6a.css",
+    "main.js": "/mglam-beauty-salon/static/js/main.ba963447.js",
+    "static/js/488.efb06563.chunk.js": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js",
+    "index.html": "/mglam-beauty-salon/index.html",
+    "main.eb81ae6a.css.map": "/mglam-beauty-salon/static/css/main.eb81ae6a.css.map",
+    "main.ba963447.js.map": "/mglam-beauty-salon/static/js/main.ba963447.js.map",
+    "488.efb06563.chunk.js.map": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb81ae6a.css",
-    "static/js/main.526189f9.js"
+    "static/js/main.ba963447.js"
   ]
 }
