@@ -4,10 +4,7 @@ import './Location.css';
 const Location = () => {
     return (
         <div className="location-container">
-            {/* Title */}
             <h1 className="location-title">Our Location</h1>
-
-            {/* Google Maps Embed */}
             <div className="map-container">
                 <iframe
                     title="M.Glam Location"

@@ -1,29 +1,24 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Inter:wght@300;400;700&display=swap');
 
-/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Inter:wght@300;400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Apply a Default Font */
 body {
-  font-family: 'Inter', sans-serif; /* Change default font */
-  background-color: #f8f8f8; /* Light background */
-  color: #333; /* Dark text */
+  font-family: 'Inter', sans-serif; 
+  background-color: #f8f8f8; 
+  color: #333; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth; 
 }
 
-/* Code Block Styling */
 code {
   font-family: 'Courier New', monospace;
 }
 
-/* Add a Scroll Snap (if you want smooth scrolling between sections) */
 html {
   scroll-behavior: smooth;
 }

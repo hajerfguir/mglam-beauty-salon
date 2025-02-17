@@ -37,7 +37,7 @@
     font-family: 'Abhaya Libre', serif;
     font-size: 26px;
     color: #800000;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     font-weight: normal;
     border-bottom: 2px solid #800000;
     padding-bottom: 5px;
@@ -62,7 +62,7 @@
     color: #800000;
     font-size: 16px;
     text-align: right;
-    min-width: 80px; /* Ensure all prices align */
+    min-width: 80px; 
 }
 
 /* Responsive */

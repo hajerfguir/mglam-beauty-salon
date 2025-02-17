@@ -17,7 +17,7 @@
     font-size: 55px;
     color: #800000; 
     font-weight: normal;
-    margin-top: 90px; 
+    margin-top: 70px; 
     letter-spacing: 3px;
 }
 
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px; /* Adds space between items */
+    gap: 10px; 
     text-align: center;
     margin-top: 20px;
 }
@@ -37,13 +37,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 220px; /* Keeps size consistent */
+    width: 220px; 
 }
 
 /* Icons */
 .contact-icon {
     width: 50px;
-    opacity: 0.2; /* Light background styling */
+    opacity: 0.2; 
 }
 
 /* Headings */
@@ -75,9 +75,9 @@
 /* Opening Hours Styling */
 .opening-hours {
     text-align: center;
-    color:#800000 ;
+    color: #800000 ;
     background-color:rgb(244, 239, 239);
-    margin-top: 30px; /* Adds space between email & opening hours */
+    margin-top: 10px; 
     width: 100%;
 }
 
@@ -90,16 +90,16 @@
 @media (max-width: 900px) {
     .contact-grid {
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 20px;
     }
 }
 /* Reviews Section */
 .reviews-section {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 20px;
     background: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .reviews-title {
@@ -112,7 +112,7 @@
 .reviews-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 

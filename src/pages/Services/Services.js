@@ -7,7 +7,6 @@ const Services = () => {
             <h1 className="services-title">Our Services</h1>
 
             <div className="services-grid">
-                {/* Make Up */}
                 <div>
                     <h2 className="services-category">Make Up</h2>
                     <div className="service-item"><span>Daily make up</span> <span className="service-price">from $35</span></div>
@@ -17,7 +16,6 @@ const Services = () => {
                     <div className="service-item"><span>Television make up</span> <span className="service-price">from $70</span></div>
                 </div>
 
-                {/* Nail Care */}
                 <div>
                     <h2 className="services-category">Nail Care</h2>
                     <div className="service-item"><span>Manicure</span> <span className="service-price">from $15</span></div>
@@ -27,7 +25,6 @@ const Services = () => {
                     <div className="service-item"><span>Gel polish + reapplication</span> <span className="service-price">from $25</span></div>
                 </div>
 
-                {/* Hair Styling */}
                 <div>
                     <h2 className="services-category">Hair Styling</h2>
                     <div className="service-item"><span>Simple haircut</span> <span className="service-price">from $30</span></div>
@@ -37,7 +34,6 @@ const Services = () => {
                     <div className="service-item"><span>Hair mask</span> <span className="service-price">from $15</span></div>
                 </div>
 
-                {/* Spa Procedures */}
                 <div>
                     <h2 className="services-category">SPA Procedures</h2>
                     <div className="service-item"><span>Body scrub & smoothing</span> <span className="service-price">from $50</span></div>

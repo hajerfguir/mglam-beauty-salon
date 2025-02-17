@@ -12,24 +12,16 @@ const Booking = () => {
         service: "",
     });
 
-    const [showConfirmation, setShowConfirmation] = useState(false); // Initially false
+    const [showConfirmation, setShowConfirmation] = useState(false);
 
-    // Handle input changes
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Save form data in localStorage
         localStorage.setItem("bookingData", JSON.stringify(formData));
-
-        // Show the confirmation section
         setShowConfirmation(true);
-
-        // Scroll to confirmation section
         setTimeout(() => {
             const confirmationSection = document.getElementById("confirmation-section");
             if (confirmationSection) {
@@ -41,12 +33,10 @@ const Booking = () => {
     return (
         <div className="booking-container">
             <div className="booking-box">
-                {/* Left Side: Image */}
                 <div className="booking-image">
                     <img src="/images/makeup.png" alt="Beauty Salon" />
                 </div>
 
-                {/* Right Side: Form */}
                 <div className="booking-form">
                     <h3 className="salon-title">M.GLAM BEAUTY SALON</h3>
                     <h2 className="booking-title">Book appointment</h2>
@@ -80,7 +70,6 @@ const Booking = () => {
                 </div>
             </div>
 
-            {/* Confirmation Section - Only appears after form submission */}
             {showConfirmation && (
                 <div id="confirmation-section" className="confirmation-container">
                     <div className="confirmation-box">

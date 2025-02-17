@@ -1,5 +1,5 @@
 import React from 'react';
-import './DiscountBanner.css'; // Create this file for styling
+import './DiscountBanner.css';
 
 const DiscountBanner = () => {
     return (

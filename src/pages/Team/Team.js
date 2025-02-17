@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Team.css';
 
 const Team = () => {
@@ -32,7 +33,6 @@ const Team = () => {
         }
     ];
 
-    // Function to render star ratings
     const renderStars = (rating) => {
         const fullStars = Math.floor(rating);
         const halfStar = rating % 1 !== 0;
@@ -50,29 +50,23 @@ const Team = () => {
     };
 
     return (
-        <div className="team-container">
-            {/* Title */}
+        <div className="container text-center team-container">
             <h1 className="team-title">Our Stylists</h1>
 
-            {/* Bootstrap Grid Layout */}
-            <div className="container">
-                <div className="row justify-content-center team-grid">
-                    {stylists.map((stylist, index) => (
-                        <div key={index} className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            <div className="team-member">
-                                <img src={stylist.image} alt={stylist.name} className="team-image" />
-                                <h3>{stylist.name}</h3>
-                                <p className="stylist-role">{stylist.role}</p>
-
-                                {/* Star Ratings */}
+            <div className="row justify-content-center mt-5">
+                {stylists.map((stylist, index) => (
+                    <div key={index} className="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center mb-4">
+                        <div className="card team-member shadow-sm">
+                            <img src={stylist.image} alt={stylist.name} className="card-img-top team-image" />
+                            <div className="card-body">
+                                <h5 className="card-title">{stylist.name}</h5>
+                                <p className="card-text stylist-role">{stylist.role}</p>
                                 {renderStars(stylist.rating)}
-
-                                {/* Social Icons */}
-                                <div className="social-icons">
-                                    <a href={stylist.facebook} target="_blank" rel="noopener noreferrer">
+                                <div className="d-flex justify-content-center social-icons mt-3">
+                                    <a href={stylist.facebook} target="_blank" rel="noopener noreferrer" className="me-2">
                                         <img src="/images/fb.png" alt="Facebook" className="social-icon" />
                                     </a>
-                                    <a href={stylist.twitter} target="_blank" rel="noopener noreferrer">
+                                    <a href={stylist.twitter} target="_blank" rel="noopener noreferrer" className="me-2">
                                         <img src="/images/x.png" alt="Twitter" className="social-icon" />
                                     </a>
                                     <a href={stylist.instagram} target="_blank" rel="noopener noreferrer">
@@ -81,8 +75,8 @@ const Team = () => {
                                 </div>
                             </div>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
         </div>
     );

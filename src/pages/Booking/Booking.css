@@ -92,7 +92,6 @@ input[type="date"], input[type="time"] {
     background-color: #a52a2a;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .booking-box {
         flex-direction: column;

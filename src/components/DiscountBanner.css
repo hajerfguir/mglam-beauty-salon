@@ -1,8 +1,7 @@
 .discount-banner {
-    background-color: #800000; /* Dark red */
+    background-color: #800000; 
     color: white;
     text-align: center;
-    /*padding: 10px 0;*/
     font-size: 12px;
     font-weight: bold;
     height: 35px;

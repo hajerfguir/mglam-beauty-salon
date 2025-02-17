@@ -1,4 +1,4 @@
-/* Ensure body and root div fill the viewport */
+
 body, #root {
   margin: 0;
   padding: 0;
@@ -6,7 +6,6 @@ body, #root {
   font-family: Arial, sans-serif;
 }
 
-/* Prevent layout shift on page load */
 .home-container {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;

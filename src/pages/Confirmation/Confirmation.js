@@ -18,7 +18,7 @@ const Confirmation = () => {
 
   
     const handleReturnHome = () => {
-        navigate("/home"); // Navigate to home
+        navigate("/home"); 
         setTimeout(() => {
             window.scrollTo({ top: 0, behavior: "smooth" }); 
         }, 100);
