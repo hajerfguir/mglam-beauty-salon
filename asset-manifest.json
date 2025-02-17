@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/mglam-beauty-salon/static/css/main.eb81ae6a.css",
-    "main.js": "/mglam-beauty-salon/static/js/main.ba963447.js",
-    "static/js/488.efb06563.chunk.js": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js",
-    "index.html": "/mglam-beauty-salon/index.html",
-    "main.eb81ae6a.css.map": "/mglam-beauty-salon/static/css/main.eb81ae6a.css.map",
-    "main.ba963447.js.map": "/mglam-beauty-salon/static/js/main.ba963447.js.map",
-    "488.efb06563.chunk.js.map": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js.map"
+    "main.css": "/static/css/main.eb81ae6a.css",
+    "main.js": "/static/js/main.b41556ac.js",
+    "static/js/488.efb06563.chunk.js": "/static/js/488.efb06563.chunk.js",
+    "static/media/mglam-center.jpg": "/static/media/mglam-center.0bead39b816ee659b930.jpg",
+    "static/media/makeup.png": "/static/media/makeup.3b245fa3acd933fba762.png",
+    "static/media/mglam-logo.png": "/static/media/mglam-logo.d2b86b6c33bdbc0fb34f.png",
+    "static/media/member2.png": "/static/media/member2.d97ec2977ec422637697.png",
+    "static/media/member1.png": "/static/media/member1.0d612e445f923f3c7a41.png",
+    "static/media/member3.png": "/static/media/member3.3d93fc43d2f4c3275aad.png",
+    "static/media/phone-icon.png": "/static/media/phone-icon.3b80ba8b6d2428d25a3a.png",
+    "static/media/email-icon.png": "/static/media/email-icon.b905092ebd59872daaf4.png",
+    "static/media/logo-transparent.png": "/static/media/logo-transparent.2e00210fafb18a5a5b75.png",
+    "static/media/location-icon.png": "/static/media/location-icon.9f1aec5da47383530e8f.png",
+    "static/media/footer.png": "/static/media/footer.f87002e699d854b4c9cd.png",
+    "static/media/x.png": "/static/media/x.4d41730b430ce225639b.png",
+    "index.html": "/index.html",
+    "main.eb81ae6a.css.map": "/static/css/main.eb81ae6a.css.map",
+    "main.b41556ac.js.map": "/static/js/main.b41556ac.js.map",
+    "488.efb06563.chunk.js.map": "/static/js/488.efb06563.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb81ae6a.css",
-    "static/js/main.ba963447.js"
+    "static/js/main.b41556ac.js"
   ]
 }
