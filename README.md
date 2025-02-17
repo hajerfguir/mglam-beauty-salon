@@ -1,3 +1,31 @@
+## MGlam Beauty Salon 
+
+## Login Credentials
+
+username: admin
+password: 1512
+
+## Project Description
+
+MGlam Beauty Salon is a modern and interactive website that allows customers to **book beauty services online**, browse available stylists, and read customer reviews. The website is designed for a **seamless user experience** with **React.js** and **Bootstrap**.
+
+## Key Features
+
+Online Booking: Select a service, a stylist, and an appointment time.  
+Ratings & Reviews: View customer feedback and stylist ratings.  
+Intuitive Interface: A clear and responsive layout for all devices.  
+Integrated Google Maps: Easily find the salon’s location.  
+Secure Login System: Restricted access with user authentication.  
+
+---
+
+## Technologies Used
+
+- Frontend: React.js, JavaScript, HTML, CSS, Bootstrap  
+- UI Framework: React Bootstrap  
+- Temporary Storage: LocalStorage  
+- Hosting: GitHub Pages
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
