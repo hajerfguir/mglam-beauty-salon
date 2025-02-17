@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mglam-beauty-salon/static/css/main.eb81ae6a.css",
-    "main.js": "/mglam-beauty-salon/static/js/main.ba963447.js",
-    "static/js/488.efb06563.chunk.js": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js",
-    "index.html": "/mglam-beauty-salon/index.html",
-    "main.eb81ae6a.css.map": "/mglam-beauty-salon/static/css/main.eb81ae6a.css.map",
-    "main.ba963447.js.map": "/mglam-beauty-salon/static/js/main.ba963447.js.map",
-    "488.efb06563.chunk.js.map": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js.map"
+    "main.css": "/static/css/main.eb81ae6a.css",
+    "main.js": "/static/js/main.7fd9d9f1.js",
+    "static/js/488.efb06563.chunk.js": "/static/js/488.efb06563.chunk.js",
+    "index.html": "/index.html",
+    "main.eb81ae6a.css.map": "/static/css/main.eb81ae6a.css.map",
+    "main.7fd9d9f1.js.map": "/static/js/main.7fd9d9f1.js.map",
+    "488.efb06563.chunk.js.map": "/static/js/488.efb06563.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb81ae6a.css",
-    "static/js/main.ba963447.js"
+    "static/js/main.7fd9d9f1.js"
   ]
 }
