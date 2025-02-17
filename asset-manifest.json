@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mglam/static/css/main.eb81ae6a.css",
+    "main.js": "/mglam/static/js/main.ebee6e30.js",
+    "static/js/488.efb06563.chunk.js": "/mglam/static/js/488.efb06563.chunk.js",
+    "index.html": "/mglam/index.html",
+    "main.eb81ae6a.css.map": "/mglam/static/css/main.eb81ae6a.css.map",
+    "main.ebee6e30.js.map": "/mglam/static/js/main.ebee6e30.js.map",
+    "488.efb06563.chunk.js.map": "/mglam/static/js/488.efb06563.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb81ae6a.css",
+    "static/js/main.ebee6e30.js"
+  ]
+}
