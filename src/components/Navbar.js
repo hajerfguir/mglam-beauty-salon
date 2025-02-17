@@ -4,6 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container, Button, Image } from 'react-bootstrap';
 import './Navbar.css';
 
+import mglamLogo from "../public/images/mglam-logo.png";
+import glamIcon from "../public/images/glam-icon.png";
+import loginIcon from "../public/images/login-icon.png";
+
 const CustomNavbar = () => {
     const location = useLocation();
     const navigate = useNavigate();
@@ -29,7 +33,7 @@ const CustomNavbar = () => {
             <Navbar expand="lg" fixed="top" className="navbar custom-navbar">
                 <Container>
                     <Navbar.Brand href="/" className="navbar-brand">
-                        <Image src="/images/mglam-logo.png" alt="MGlam Logo" className="navbar-logo" />
+                        <Image src={mglamLogo} alt="MGlam Logo" className="navbar-logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -38,7 +42,7 @@ const CustomNavbar = () => {
                             <Nav.Link onClick={() => handleNavigation("services", "/services")} className={location.pathname === "/services" ? "active custom-active" : "custom-link"}>Services</Nav.Link>
                             <Nav.Link onClick={() => handleNavigation("team", "/team")} className={location.pathname === "/team" ? "active custom-active" : "custom-link"}>Our Team</Nav.Link>
                             <Nav.Link className="nav-icon">
-                                <Image src="/images/glam-icon.png" alt="Glam Icon" className="glam-icon" />
+                                <Image src={glamIcon} alt="Glam Icon" className="glam-icon" />
                             </Nav.Link>
                             <Nav.Link onClick={() => handleNavigation("location", "/location")} className={location.pathname === "/location" ? "active custom-active" : "custom-link"}>Location</Nav.Link>
                             <Nav.Link onClick={() => handleNavigation("contact", "/contact")} className={location.pathname === "/contact" ? "active custom-active" : "custom-link"}>Contact Us</Nav.Link>
@@ -48,13 +52,13 @@ const CustomNavbar = () => {
                             {isLoggedIn ? (
                                 <div className="user-info d-flex align-items-center">
                                     <Link to="/client-info" className="user-name custom-user fw-bold">Hajer</Link>
-                                    <Image src="/images/login-icon.png" alt="User Icon" className="user-icon" />
+                                    <Image src={loginIcon} alt="User Icon" className="user-icon" />
                                     <Button variant="danger" size="sm" onClick={handleLogout} className="logout-btn">Logout</Button>
                                 </div>
                             ) : (
                                 <div className="login-section d-flex align-items-center">
                                     <Link to="/login" className="login-text custom-link">Login</Link>
-                                    <Image src="/images/login-icon.png" alt="Login Icon" className="login-icon" />
+                                    <Image src={loginIcon} alt="Login Icon" className="login-icon" />
                                 </div>
                             )}
                         </Nav>

@@ -16,7 +16,7 @@ const Confirmation = () => {
         }
     }, [navigate]);
 
-  
+    
     const handleReturnHome = () => {
         navigate("/home"); 
         setTimeout(() => {

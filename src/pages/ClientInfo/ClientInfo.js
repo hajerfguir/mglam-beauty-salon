@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./ClientInfo.css";
 
+import defaultProfileImage from "../../public/images/member3.png";
+
 const ClientInfo = () => {
-  const [profileImage, setProfileImage] = useState("/images/member3.png");
+  const [profileImage, setProfileImage] = useState(defaultProfileImage);
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];

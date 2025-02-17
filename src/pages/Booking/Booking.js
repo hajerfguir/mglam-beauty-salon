@@ -1,6 +1,8 @@
 import React, { useState } from "react"; 
 import "./Booking.css";
 
+import makeupImage from "../../public/images/makeup.png";
+
 const Booking = () => {
     const [formData, setFormData] = useState({
         firstName: "",
@@ -34,7 +36,7 @@ const Booking = () => {
         <div className="booking-container">
             <div className="booking-box">
                 <div className="booking-image">
-                    <img src="/images/makeup.png" alt="Beauty Salon" />
+                    <img src={makeupImage} alt="Beauty Salon" />
                 </div>
 
                 <div className="booking-form">

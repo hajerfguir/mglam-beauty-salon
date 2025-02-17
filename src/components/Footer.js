@@ -1,11 +1,17 @@
 import React from "react";
 import "./Footer.css";
 
+import logo from "../public/images/logo-transparent.png";
+import fbIcon from "../public/images/fb.png";
+import twitterIcon from "../public/images/x.png";
+import instaIcon from "../public/images/insta.png";
+import footerImg from "../public/images/footer.png";
+
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <img src="/images/logo-transparent.png" alt="M.Glam Logo" className="footer-logo" />
+                <img src={logo} alt="M.Glam Logo" className="footer-logo" />
                 <h2 className="footer-title">M.Glam Beauty Salon</h2>
                 <p className="footer-description">
                     Discover excellence and well-being at M.Glam Beauty Salon. Our beauty
@@ -13,13 +19,13 @@ const Footer = () => {
                 </p>
                 <div className="social-icons">
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/fb.png" alt="Facebook" className="social-icon" />
+                        <img src={fbIcon} alt="Facebook" className="social-icon" />
                     </a>
                     <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/x.png" alt="Twitter" className="social-icon" />
+                        <img src={twitterIcon} alt="Twitter" className="social-icon" />
                     </a>
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/insta.png" alt="Instagram" className="social-icon" />
+                        <img src={instaIcon} alt="Instagram" className="social-icon" />
                     </a>
                 </div>
             </div>
@@ -29,7 +35,7 @@ const Footer = () => {
                     <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms of Use</a>
                 </div>
                 <div className="footer-right">
-                    <img src="/images/footer.png" alt="Payment Methods" className="footer-payment" />
+                    <img src={footerImg} alt="Payment Methods" className="footer-payment" />
                 </div>
             </div>
         </footer>

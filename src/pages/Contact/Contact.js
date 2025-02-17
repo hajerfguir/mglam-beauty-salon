@@ -1,6 +1,10 @@
 import React from 'react';
 import './Contact.css';
 
+import locationIcon from "../../public/images/location-icon.png";
+import emailIcon from "../../public/images/email-icon.png";
+import phoneIcon from "../../public/images/phone-icon.png";
+
 const Contact = () => {
     const reviews = [
         { id: 1, name: "Sarah L.", rating: 4.8, text: "Amazing service! My hair has never looked better." },
@@ -13,18 +17,18 @@ const Contact = () => {
             <h1 className="contact-title">Contact Us</h1>
             <div className="contact-grid">
                 <div className="contact-item">
-                    <img src="/images/location-icon.png" alt="Location Icon" className="contact-icon" />
+                    <img src={locationIcon} alt="Location Icon" className="contact-icon" />
                     <h3>Address</h3>
                     <p>1920 Bank St #4, Ottawa, ON K1V 7Z8, Canada</p>
                 </div>
 
                 <div className="contact-item">
-                    <img src="/images/email-icon.png" alt="Email Icon" className="contact-icon" />
+                    <img src={emailIcon} alt="Email Icon" className="contact-icon" />
                     <h3>Email</h3>
                     <p><a href="mailto:mglam@gmail.com" className="email-link">mglam@gmail.com</a></p>
                 </div>
                 <div className="contact-item">
-                    <img src="/images/phone-icon.png" alt="Phone Icon" className="contact-icon" />
+                    <img src={phoneIcon} alt="Phone Icon" className="contact-icon" />
                     <h3>Phone</h3>
                     <p>+1 (438)-917-5787 <br />+1 (438)-353-9935</p>
                 </div>

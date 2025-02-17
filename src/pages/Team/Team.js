@@ -2,12 +2,19 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Team.css';
 
+import member1 from "../../public/images/member1.png";
+import member2 from "../../public/images/member2.png";
+import member3 from "../../public/images/member3.png";
+import fbIcon from "../../public/images/fb.png";
+import twitterIcon from "../../public/images/x.png";
+import instaIcon from "../../public/images/insta.png";
+
 const Team = () => {
     const stylists = [
         {
             name: "Jaqueline Colon",
             role: "Makeup & Hair Artist",
-            image: "/images/member1.png",
+            image: member1,
             instagram: "https://www.instagram.com/",
             facebook: "https://www.facebook.com/",
             twitter: "https://twitter.com/",
@@ -16,7 +23,7 @@ const Team = () => {
         {
             name: "Wanda Cummerata",
             role: "Nail Specialist",
-            image: "/images/member2.png",
+            image: member2,
             instagram: "https://www.instagram.com/",
             facebook: "https://www.facebook.com/",
             twitter: "https://twitter.com/",
@@ -25,7 +32,7 @@ const Team = () => {
         {
             name: "Cameron Banks",
             role: "Spa Therapist",
-            image: "/images/member3.png",
+            image: member3,
             instagram: "https://www.instagram.com/",
             facebook: "https://www.facebook.com/",
             twitter: "https://twitter.com/",
@@ -64,13 +71,13 @@ const Team = () => {
                                 {renderStars(stylist.rating)}
                                 <div className="d-flex justify-content-center social-icons mt-3">
                                     <a href={stylist.facebook} target="_blank" rel="noopener noreferrer" className="me-2">
-                                        <img src="/images/fb.png" alt="Facebook" className="social-icon" />
+                                        <img src={fbIcon} alt="Facebook" className="social-icon" />
                                     </a>
                                     <a href={stylist.twitter} target="_blank" rel="noopener noreferrer" className="me-2">
-                                        <img src="/images/x.png" alt="Twitter" className="social-icon" />
+                                        <img src={twitterIcon} alt="Twitter" className="social-icon" />
                                     </a>
                                     <a href={stylist.instagram} target="_blank" rel="noopener noreferrer">
-                                        <img src="/images/insta.png" alt="Instagram" className="social-icon" />
+                                        <img src={instaIcon} alt="Instagram" className="social-icon" />
                                     </a>
                                 </div>
                             </div>

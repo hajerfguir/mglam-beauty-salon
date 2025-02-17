@@ -6,6 +6,8 @@ import Contact from "../Contact/Contact";
 import Team from "../Team/Team";
 import "./Home.css";
 
+import heroImage from "../../public/images/mglam-center.jpg";
+
 const Home = () => {
   return (
     <>
@@ -13,7 +15,7 @@ const Home = () => {
         <h1 className="salon-name">M. Glam Beauty Salon</h1>
         <div className="hero-section">
           <img
-            src="/images/mglam-center.jpg"
+            src={heroImage}
             alt="Salon Interior"
             className="hero-image"
           />
