@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mglam-beauty-salon/static/css/main.eb81ae6a.css",
-    "main.js": "/mglam-beauty-salon/static/js/main.5003d4a8.js",
+    "main.js": "/mglam-beauty-salon/static/js/main.f324967d.js",
     "static/js/488.efb06563.chunk.js": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js",
     "index.html": "/mglam-beauty-salon/index.html",
     "main.eb81ae6a.css.map": "/mglam-beauty-salon/static/css/main.eb81ae6a.css.map",
-    "main.5003d4a8.js.map": "/mglam-beauty-salon/static/js/main.5003d4a8.js.map",
+    "main.f324967d.js.map": "/mglam-beauty-salon/static/js/main.f324967d.js.map",
     "488.efb06563.chunk.js.map": "/mglam-beauty-salon/static/js/488.efb06563.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb81ae6a.css",
-    "static/js/main.5003d4a8.js"
+    "static/js/main.f324967d.js"
   ]
 }
