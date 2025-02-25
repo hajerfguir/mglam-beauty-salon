@@ -1,8 +1,9 @@
 ## MGlam Beauty Salon
+The link to the user interface hosted on GitHub Pages or another platform: https://hajerfguir.github.io/mglam-beauty-salon/
 
 ## Login Credentials
-username: admin
-password: 1512
+-username: admin
+-password: 1512
 
 ## Project Description
 MGlam Beauty Salon is a modern and interactive website that allows customers to book beauty services online, browse available stylists, and read customer reviews. The website is designed for a seamless user experience with React.js and Bootstrap.
